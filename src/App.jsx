@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import praash1 from './assets/praash1.jpg'
 import prakash2 from './assets/prakash2.jpg'
+import taskflow  from './assets/taskflow sot.jpg'
 
 export default function App() {
   return (
@@ -32,13 +33,16 @@ export default function App() {
         `}
       </style>
 
+ 
+       
+ <section className="transparent min-h-75 sm:min-h-150"> <div className="absolute top-0 left-0 w-122 h-52 bg-blue-200 blur-3xl rounded-full"></div></section>
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-5">
+      <section className="relative  flex flex-col items-center justify-center text-center px-5">
         <div className="absolute top-20 left-10 w-52 h-52 bg-blue-300/30 blur-3xl rounded-full"></div>
         <div className="absolute bottom-32 right-10 w-60 h-60 bg-blue-400/20 blur-3xl rounded-full"></div>
 
-        <div className="w-38 h-38 rounded-full bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center text-white text-4xl font-bold shadow-2xl shadow-blue-300 border-4 border-white fade-up">
-          <img src={prakash2} className="rounded-full" alt="" />
+        <div className="w-24 h-24 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center text-white text-4xl font-bold shadow-2xl shadow-blue-300 border-4 border-white fade-up">
+          <img src={prakash2} className="rounded-full " alt="" />
         </div>
     
 
@@ -56,7 +60,7 @@ export default function App() {
          Hello, I’m Prakash Prajapat, a passionate MERN Stack Developer focused on building modern and responsive web applications.
         </p>
 
-      expierence
+      
       <a href="#expierence" className="mt-7 px-7 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition fade-up">Expierince</a>
           
 
@@ -283,14 +287,16 @@ Currently improving my full-stack development skills by building real-world proj
         <p className="text-center text-blue-500 tracking-widest">● ● ●</p>
         <h2 className="text-3xl font-bold text-center mt-3">Projcts</h2>
 
-        <div className="max-w-6xl mx-auto mt-12 grid md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto mt-12 grid  sm:grid-cols-1 gap-10">
         
             <div className="grid  sm:grid-cols-2  gap-5 items-center">
-              <div className="bg-slate-900 rounded-xl p-3 shadow-xl">
-                <div className="h-32 bg-gradient-to-br from-slate-800 to-blue-900 rounded-lg"></div>
+       <div className="grid gap-10 ">
+               <div className="bg-slate-900 rounded-xl p-3 w-120 shadow-xl">
+                <img src={taskflow} className="w-120" alt="" />
+                <div className=" bg-gradient-to-br from-slate-800 to-blue-900 rounded-lg"></div>
               </div>
 
-              <div>
+              <div className="text-center">
                 <h3 className="text-xl font-bold text-black ">TaskFlow</h3>
                 <p className="text-sm text-blue-500 mt-1">
                  
@@ -304,6 +310,7 @@ Currently improving my full-stack development skills by building real-world proj
                  <a href="https://github.com/prakash-006/TaskFlow" className="mt-8 px-5 py-2  border border-blue-500 text-blue-600 rounded-full text-sm hover:bg-blue-600 hover:text-white transition">View Project →</a>
                </div>
               </div>
+       </div>
             </div>
           
         </div>
@@ -324,9 +331,9 @@ Currently improving my full-stack development skills by building real-world proj
           </div>
 
           <div className="flex gap-4 md:justify-end text-xl">
-            <a href="https://github.com/prakash-006" className="w-12 h-12 bg-gray-200 rounded-full flex items-center hover:text-white  hover:bg-green-500 justify-center"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/prakash-prajapat-25b241265/" className="w-12 h-12 bg-gray-200 rounded-full hover:text-white flex items-center hover:bg-blue-500 justify-center"><FaLinkedin/></a>
-            <a href="https://www.instagram.com/mr_kumar_ll" className="w-12 h-12 bg-gray-200 rounded-full flex items-center hover:text-white hover:bg-red-500 justify-center"><FaInstagram /></a>
+            <a href="https://github.com/prakash-006" className="w-12 h-12 bg-green-500 rounded-full flex items-center text-white   justify-center"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/prakash-prajapat-25b241265/" className="w-12 h-12 bg-blue-500 rounded-full text-white flex items-center justify-center"><FaLinkedin/></a>
+            <a href="https://www.instagram.com/mr_kumar_ll" className="w-12 h-12 bg-red-500 rounded-full flex items-center text-white  justify-center"><FaInstagram /></a>
           </div>
         </div>
       </section>
