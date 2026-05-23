@@ -15,9 +15,12 @@ import {
 import praash1 from './assets/praash1.jpg'
 import prakash2 from './assets/prakash2.jpg'
 import taskflow  from './assets/taskflow sot.jpg'
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
 
 export default function App() {
   return (
+
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,#dbeafe,transparent_35%),radial-gradient(circle_at_bottom_right,#bfdbfe,transparent_30%),#ffffff] text-slate-900 overflow-hidden">
       <style>
         {`
@@ -34,27 +37,60 @@ export default function App() {
       </style>
 
  
+   <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blpurpl-100 via-blue-700/50 to-blue-100 flex items-center justify-center text-slate-900">
+    
+ 
+       {/* Moving skill icons */}
+       <div className="absolute inset-0 pointer-events-none">
+         <FaReact className="absolute top-[18%] left-[15%] text-5xl text-sky-400 animate-floatSlow" />
+         <FaNodeJs className="absolute top-[22%] right-[18%] text-5xl text-green-500 animate-floatFast" />
+         <SiMongodb className="absolute bottom-[22%] left-[18%] text-5xl text-green-600 animate-floatSlow" />
+         <SiExpress className="absolute bottom-[18%] right-[22%] text-5xl text-slate-600 animate-floatFast" />
+         <FaHtml5 className="absolute top-[55%] left-[8%] text-4xl text-red-500 animate-floatFast" />
+         <FaCss3Alt className="absolute top-[62%] right-[8%] text-4xl text-blue-500/ animate-floatSlow" />
+         <FaJs className="absolute top-[12%] right-[40%] text-4xl text-yellow-500 animate-floatFast" />
+         <SiTailwindcss className="absolute bottom-[12%] left-[45%] text-5xl text-blue-600 animate-floatSlow" />
+       </div>
+ 
+       <div className="relative z-10 text-center px-5">
+
+ 
+         <h1 className="mt-8 text-5xl md:text-9xl  font-extrabold">
+           Prakash
+         </h1>
+ 
+         <p className="mt-4 text-xl md:text-3xl  font-bold">
+           MERN Stack Developer
+         </p>
+            <div className="flex gap-4 justify-center mt-10 text-xl">
+            <a href="https://github.com/prakash-006" className="w-16 h-16 bg-transparent border-3 rounded-full flex items-center  text-black hover:text-white hover:bg-green-500   justify-center"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/prakash-prajapat-25b241265/" className="w-16 h-16 bg-transparent border-3 rounded-full text-black hover:text-white hover:bg-blue-500   flex items-center justify-center"><FaLinkedin/></a>
+            <a href="https://www.instagram.com/mr_kumar_ll" className="w-16 h-16 b-transparent border-3 rounded-full flex items-center text-black hover:text-white hover:bg-red-400    justify-center"><FaInstagram /></a>
+          </div>
+
+ 
+         <div className="mt-8 flex justify-center gap-4">
+
+ 
+        <a href="#about" className="px-3 py-3 lg:text-xl md:px-10 md:py-5 rounded-full border border-blue-300 text-white bg-blue-500 font-bold hover:bg-blue-600 hover:text-white hover:scale-105 transition">
+          About
+        </a>
+        <a href="#project" className="px-3 py-3 md:px-10 md:py-5  lg:text-xl  rounded-full border border-blue-300 text-black bg-white font-bold hover:bg-blue-600 hover:text-white hover:scale-105 transition">
+          Project
+        </a>
+         </div>
+       </div>
+     </section>
        
- <section className="transparent min-h-75 sm:min-h-150"> <div className="absolute top-0 left-0 w-122 h-52 bg-blue-200 blur-3xl rounded-full"></div></section>
+ <section className="transparent min-h-75 sm:min-h-150"> </section>
       {/* HERO */}
-      <section className="relative  flex flex-col items-center justify-center text-center px-5">
+      <section id="about" className="relative  flex flex-col items-center justify-center text-center px-5">
         <div className="absolute top-20 left-10 w-52 h-52 bg-blue-300/30 blur-3xl rounded-full"></div>
         <div className="absolute bottom-32 right-10 w-60 h-60 bg-blue-400/20 blur-3xl rounded-full"></div>
 
-        <div className="w-24 h-24 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center text-white text-4xl font-bold shadow-2xl shadow-blue-300 border-4 border-white fade-up">
+        <div className="w-24 h-24 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center text-white text-4xl font-bold shadow-2xl s border-4 border-white fade-up">
           <img src={prakash2} className="rounded-full " alt="" />
         </div>
-    
-
-        <p className="mt-5 text-sm text-blue-600 font-medium fade-up">Hi, I am</p>
-
-        <h1 className="text-4xl md:text-6xl font-extrabold mt-2 fade-up">
-          Prakash <span className="text-blue-600"></span>
-        </h1>
-
-        <h2 className="text-xl md:text-2xl text-blue-600 font-bold mt-3 fade-up">
-          MERN Stack Developer
-        </h2>
 
         <p className="max-w-xl text-slate-600 mt-5 leading-7 fade-up">
          Hello, I’m Prakash Prajapat, a passionate MERN Stack Developer focused on building modern and responsive web applications.
@@ -283,16 +319,16 @@ Currently improving my full-stack development skills by building real-world proj
 </section>
 
       {/* PROJECTS */}
-      <section className="py-5 px-5 fade-up">
+      <section className="py-5 px-5 fade-up " id="project">
         <p className="text-center text-blue-500 tracking-widest">● ● ●</p>
-        <h2 className="text-3xl font-bold text-center mt-3">Projcts</h2>
+        <h2 className="text-3xl font-bold text-center mt-3">Projects</h2>
 
         <div className="max-w-6xl mx-auto mt-12 grid  sm:grid-cols-1 gap-10">
         
             <div className="grid  sm:grid-cols-2  gap-5 items-center">
        <div className="grid gap-10 ">
-               <div className="bg-slate-900 rounded-xl p-3 w-120 shadow-xl">
-                <img src={taskflow} className="w-120" alt="" />
+               <div className="bg-slate-900 rounded-xl p-3  shadow-xl">
+                <img src={taskflow}  alt="" />
                 <div className=" bg-gradient-to-br from-slate-800 to-blue-900 rounded-lg"></div>
               </div>
 
