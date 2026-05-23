@@ -55,27 +55,27 @@ export default function App() {
        <div className="relative z-10 text-center px-5">
 
  
-         <h1 className="mt-8 text-5xl md:text-9xl  font-extrabold">
+         <h1 className="mt-8 text-5xl md:text-9xl   font-extrabold">
            Prakash
          </h1>
  
          <p className="mt-4 text-xl md:text-3xl  font-bold">
            MERN Stack Developer
          </p>
-            <div className="flex gap-4 justify-center mt-10 text-xl">
-            <a href="https://github.com/prakash-006" className="w-16 h-16 bg-transparent border-3 rounded-full flex items-center  text-black hover:text-white hover:bg-green-500   justify-center"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/prakash-prajapat-25b241265/" className="w-16 h-16 bg-transparent border-3 rounded-full text-black hover:text-white hover:bg-blue-500   flex items-center justify-center"><FaLinkedin/></a>
-            <a href="https://www.instagram.com/mr_kumar_ll" className="w-16 h-16 b-transparent border-3 rounded-full flex items-center text-black hover:text-white hover:bg-red-400    justify-center"><FaInstagram /></a>
+            <div className="flex gap-4 justify-center mt-5 text-xl">
+            <a href="https://github.com/prakash-006" className="lg:w-16 lg:h-16 w-10 h-10  border-3 rounded-full flex items-center  text-white  bg-green-500   justify-center"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/prakash-prajapat-25b241265/" className="lg:w-16 lg:h-16 w-10 h-10  border-3 rounded-full text-white bg-blue-500   flex items-center justify-center"><FaLinkedin/></a>
+            <a href="https://www.instagram.com/mr_kumar_ll" className="lg:w-16 lg:h-16 w-10 h-10  border-3 rounded-full flex items-center text-white  bg-red-400    justify-center"><FaInstagram /></a>
           </div>
 
  
          <div className="mt-8 flex justify-center gap-4">
 
  
-        <a href="#about" className="px-3 py-3 lg:text-xl md:px-10 md:py-5 rounded-full border border-blue-300 text-white bg-blue-500 font-bold hover:bg-blue-600 hover:text-white hover:scale-105 transition">
+        <a href="#about" className="px-4 py-3 lg:text-xl  md:px-10 md:py-5 rounded-full   text-white bg-blue-500  hover:bg-blue-600 hover:text-white hover:scale-105 transition">
           About
         </a>
-        <a href="#project" className="px-3 py-3 md:px-10 md:py-5  lg:text-xl  rounded-full border border-blue-300 text-black bg-white font-bold hover:bg-blue-600 hover:text-white hover:scale-105 transition">
+        <a href="#project" className="px-4 py-3 md:px-10 md:py-5  lg:text-xl  rounded-full  text-black bg-white  hover:bg-blue-600 hover:text-white hover:scale-105 transition">
           Project
         </a>
          </div>
